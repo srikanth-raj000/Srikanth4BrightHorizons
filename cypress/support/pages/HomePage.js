@@ -41,7 +41,7 @@ class HomePage {
     }
 
     clickFindACenterBtn() {
-        this.getFindACenterBtn().scrollIntoView().click();
+        this.getFindACenterBtn().scrollIntoView().click({force:true});
     }
 
     openHomePage() {

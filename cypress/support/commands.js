@@ -31,3 +31,18 @@ Cypress.Commands.add('openHomePage', () => {
 Cypress.Commands.add('clickButtonUsingText', (text) => {
     cy.contains(text).scrollIntoView().click();
 })
+
+Cypress.Commands.add("waitForPageToLoad", () => {
+    cy.window().should((win) => {
+      expect(win.document.readyState).to.eq("complete");
+    });
+  });
+
+Cypress.Commands.add("waitForElements", (selector, timeout = 10000) => {
+    cy.get(selector, { timeout }).should("be.visible");
+  });
+  
+Cypress.Commands.add("waitForAPIs", () => {
+    cy.intercept("**/*").as("allRequests");
+    cy.wait("@allRequests", { timeout: 10000 });
+  });
