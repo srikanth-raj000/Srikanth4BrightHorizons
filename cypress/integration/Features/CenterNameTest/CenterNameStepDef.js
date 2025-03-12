@@ -28,12 +28,16 @@ Then('verify that newly open page contains {string} as a part of its URL', (url_
 When('the user types {string} into search box and presses Enter', (searchText) => {
     childCareLocatorPage.getLocationSearchBar()
     .clear()
-    .type(searchText)
-    .type('{enter}');
+    .type('New York', { delay: 1000 })
+    .type('{enter}', { delay: 2000 });
+    cy.wait('@GetViewportInfo').its('response.statusCode').should('eq', 200);
+    cy.waitForPageToLoad();
+    cy.waitForElements("body");
+    cy.waitForAPIs();
 });
 
 Then('verify if a number of found centers is the same as a number of centers displayed on the below list', () => {
-  childCareLocatorPage.getCountOfMatchingCenters().invoke('text').then((countText) => {
+    childCareLocatorPage.getCountOfMatchingCenters().invoke('text').then((countText) => {
     const expectedCount = parseInt(countText.trim(), 10);
     childCareLocatorPage.getCenterNames().should('have.length', expectedCount);
   });
