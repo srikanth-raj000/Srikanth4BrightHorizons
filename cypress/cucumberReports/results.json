@@ -1,0 +1,277 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-center-name-and-address;verify-search-functionality-in-bright-horizons-page",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify Search functionality in Bright Horizons page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user opens the homepage",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user validates the homepage",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user clicks on Find a Center option",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "verify that newly open page contains \"child-care-locator\" as a part of its URL",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user types \"New York\" into search box and presses Enter",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "verify if a number of found centers is the same as a number of centers displayed on the below list",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user clicks on the first center on the list",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "verify if center name and address are the same on the list and popup",
+            "match": {
+              "location": "cypress/integration/Features/CenterNameTest/CenterNameStepDef.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 1
+          },
+          {
+            "name": "@CenterNameTest",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-center-name-and-address",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Verify Center name and address",
+    "tags": [
+      {
+        "name": "@Regression",
+        "line": 1
+      },
+      {
+        "name": "@CenterNameTest",
+        "line": 1
+      }
+    ],
+    "uri": "cypress\\integration\\Features\\CenterNameTest.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-search-functionality;verify-search-functionality-in-bright-horizons-page",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify Search functionality in Bright Horizons page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user opens the homepage",
+            "match": {
+              "location": "cypress/integration/Features/LoginTest/LoginStepDef.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user validates the homepage",
+            "match": {
+              "location": "cypress/integration/Features/LoginTest/LoginStepDef.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user clicks on search icon",
+            "match": {
+              "location": "cypress/integration/Features/LoginTest/LoginStepDef.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "verifies if search field is visible on the page",
+            "match": {
+              "location": "cypress/integration/Features/LoginTest/LoginStepDef.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user enters \"Employee Education in 2018: Strategies to Watch\" in the search field",
+            "match": {
+              "location": "cypress/integration/Features/LoginTest/LoginStepDef.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "clicks on Search button",
+            "match": {
+              "location": "cypress/integration/Features/LoginTest/LoginStepDef.js:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "verify search result has entered search text \"Employee Education in 2018: Strategies to Watch\"",
+            "match": {
+              "location": "cypress/integration/Features/LoginTest/LoginStepDef.js:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          },
+          {
+            "name": "@LoginTest",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-search-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Verify search functionality",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "line": 1
+      },
+      {
+        "name": "@LoginTest",
+        "line": 1
+      }
+    ],
+    "uri": "cypress\\integration\\Features\\LoginTest.feature"
+  }
+]
