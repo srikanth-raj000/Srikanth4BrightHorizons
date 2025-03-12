@@ -23,3 +23,34 @@ This project automates the **BrightHorizons** web application using **Cypress** 
 - **Multiple Cucumber HTML Reporter** (for BDD-style reports)  
 - **Jenkins** (for CI/CD)  
 - **GitHub** (for version control)  
+
+## 🏗 Setup & Installation  
+### 1️⃣ **Clone the Repository**  
+## 🏗 Setup & Installation  
+### 1️⃣ **Clone the Repository**  
+```sh
+git clone https://github.com/your-repo/BrightHorizons-Cypress.git
+cd BrightHorizons-Cypress
+
+npm install
+
+Run All Tests
+npx cypress run
+
+Run Tests in Chrome (Headless)
+npx cypress run --browser chrome --headless
+
+Run Specific Tests with a Tag (e.g., @Sanity)
+npx cypress run --env TAGS="@Sanity"
+
+Run Cypress in Interactive Mode
+npx cypress open
+
+After execution, the Cucumber HTML Report is generated at:
+cypress/cucumberReports/cucumber-html-report/index.html
+
+🔄 Continuous Integration (CI) with Jenkins
+The project integrates with Jenkins for scheduled test execution.
+Post-build step publishes Cucumber HTML Reports.
+To run Cypress tests in Jenkins, use:
+npx cypress run --browser chrome --headless --env TAGS="@Regression"
