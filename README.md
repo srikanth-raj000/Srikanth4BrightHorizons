@@ -26,8 +26,6 @@ This project automates the **BrightHorizons** web application using **Cypress** 
 
 ## 🏗 Setup & Installation  
 ### 1️⃣ **Clone the Repository**  
-## 🏗 Setup & Installation  
-### 1️⃣ **Clone the Repository**  
 ```sh
 git clone https://github.com/your-repo/BrightHorizons-Cypress.git
 cd BrightHorizons-Cypress
