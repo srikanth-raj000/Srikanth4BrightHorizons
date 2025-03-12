@@ -1,0 +1,33 @@
+{
+  "name": "bright_horizons_srikanth",
+  "version": "1.0.0",
+  "description": "BrightHorizon assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypres run",
+    "headModeRun": "npx cypress run --headed",
+    "chromeBrowser": "npx cypress run --browser chrome",
+    "edgeBrowserRun": "npx cypress run --browser edge",
+    "firefoxBrowserRun": "npx cypress run --browser firefox",
+    "regression": "npx cypress run --browser chrome --headless --env TAGS='@Regression'",
+    "smoke": "npx cypress run --browser chrome --headless --env TAGS='@Smoke'",
+    "sanity": "npx cypress run --browser chrome --headless --env TAGS='@Sanity'"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/results.json"
+    }
+  },
+  "author": "Srikanth R",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.1.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "multiple-cucumber-html-reporter": "^3.9.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@cypress/browserify-preprocessor": "latest"
+  }
+}
